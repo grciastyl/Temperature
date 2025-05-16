@@ -1,0 +1,21 @@
+/* global */
+
+body{
+    background-image: url(istockphoto-1323823418-612x612.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+
+
+h1{
+    font-size: 300%;
+}
+
+p{
+    font-size: 200%;
+}
