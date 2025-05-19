@@ -19,3 +19,9 @@ p{
     font-size: 100%;
 }
 
+.fahrenheit{
+    color: red;
+}
+.celsius{
+    color: darkgreen;
+}

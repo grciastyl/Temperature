@@ -10,14 +10,14 @@ function convertTemperatureRange(){
 for(let i=startValue;i<=endValue;i++){
     if(scale.toLowerCase() == "c"){
         fahrenheit = ((i * 9/5) + 32).toFixed(2);
-        document.getElementById("result").innerHTML+=`<p>The conversion of Celsius ${i} to Fahrenheit is ${fahrenheit}</p>`;
+        document.getElementById("result").innerHTML+=`<p class=fahrenheit>The conversion of Celsius ${i} to Fahrenheit is ${fahrenheit}</p>`;
 
         console.log(`The conversion of Celsius ${i} to Fahrenheit is ${fahrenheit}`);
 
     } 
     else {
         celsius = ((i - 32) * 5/9).toFixed(2);
-        document.getElementById("result").innerHTML+=`<p>The conversion of Farenheit ${i} to Celsius is ${celsius}</p>`;
+        document.getElementById("result").innerHTML+=`<p class=celsius>The conversion of Farenheit ${i} to Celsius is ${celsius}</p>`;
     }   
         console.log(`The conversion of Fahrenheit ${i} to Celsius is ${celsius}`);
     }
