@@ -20,12 +20,12 @@ while(i<=10){ //stop condition
 
 // do-while loop
 
-let j=0; //start point
+let j=11; //start point
 do {
     console.log(j);
     j++;//interval
-    while(j<=10);//stop condition
-}
+}while(j<=10);//stop condition
+
 
 //while
 
@@ -37,7 +37,7 @@ function countDown(){
         results+=`<p> Launching in ${seconds} </p>`;
         seconds--;
     }
-    results += "Liftoftt!!!"
+    results += "🚀Liftoff!!!"
     document.write(results);
 
 }
@@ -50,11 +50,11 @@ function passwordPrompt(){
     let userInput;
     let notification = "Simulating password input";
 
-    do(
-        userInput + prompt("Enter your password:");
-        result+="User entered: " + userInput;
-    )while(userInput == correctPassword)
+    do{
+        userInput = prompt("Enter your password: ");
+        notification+="User entered: " + userInput;
 
-document.write(noticficatioin);
+    }while(userInput !== correctPassword);
 
+    document.write(notification);
 }
